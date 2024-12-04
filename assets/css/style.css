@@ -43,4 +43,147 @@
   transform: scale(1.05);
 }
 
+.grid {
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10rem;
+  background-color: #640fc5;
+}
+
+.logo {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #CDA7F8;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #640fc5;
+  color: white;
+  padding-left: 10rem;
+}
+.hero .hero-content {
+  max-width: 55%;
+  margin-right: 2rem;
+  animation: fade-slide 2s ease-out;
+}
+.hero h1 {
+  font-size: 6rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  color: #28064F;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #C299F3;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.hero .hero-image {
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: fade-in-up 2s ease-in;
+  display: flex;
+  flex: 0 0 30%;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid #9968d2;
+}
+.hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@keyframes fade-slide {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-buttons .btn {
+  margin: 0.5rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  gap: 1rem;
+}
+.grid .grid-item {
+  margin-top: 50px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.grid .grid-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@keyframes fade-slide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
