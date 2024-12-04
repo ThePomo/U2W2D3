@@ -1,0 +1,21 @@
+$button-colors: (
+  primary: #0e6cff,
+  secondary: #ff8700,
+  tertiary: #4caf50,
+);
+
+@each $name, $color in $button-colors {
+    .btn-#{$name} {
+      background-color: $color;
+      color: #ffffff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
