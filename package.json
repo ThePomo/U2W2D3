@@ -1,0 +1,14 @@
+{
+  "name": "u2w2d3",
+  "version": "1.0.0",
+  "description": "esercizio 3 unità due SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.82.0"
+  }
+}
